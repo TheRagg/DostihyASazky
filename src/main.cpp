@@ -50,7 +50,7 @@ bool lastButtonState = HIGH;
 bool buttonPressed = false;
 
 // Array names for serial output
-String arrayNames[] = {"RED", "BLUE", "YELLOW", "GREEN"};
+String arrayNames[] = {"CERVENA", "MODRA", "ZLUTA", "ZELENA"};
 
 // Function to get array pointer by index
 int* getArrayByIndex(int index) {
@@ -118,7 +118,7 @@ void checkForWinner() {
       digitalWrite(relayPin, LOW);
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("WINNER:");
+      lcd.print("VYHERCE:");
       lcd.setCursor(0,1);
       lcd.print(arrayNames[i]);
 
@@ -163,7 +163,7 @@ void setup() {
   delay(2000);
   lcd.clear();
   lcd.setCursor(0,1);
-  lcd.print("READY");
+  lcd.print("PRIPRAVEN");
   Serial.println("Dostihy a sazky");
   Serial.println("Press the button on pin 51 to start a race!");
   Serial.println("(You can also press any key in Serial Monitor)");
