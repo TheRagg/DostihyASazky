@@ -14,6 +14,7 @@ I used Wokwi for diagram ilustration and simulation, because as of now, I don't 
 ## How to start the game?
 
 _(Assuming you've connected & assembled everything...)_
+
 Hook up the Arduino to a PC _(preferably, not necessarry)_, and wait for the I2C display to light up. Once the backlight is on and the text "READY" appears, press the button that is connected to pin 51, and the race should start. Alternatively, you can press any key while the serial monitor is in focus.
 
 ## Can I use this in my project?
