@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "author": "Adam Hodr",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": -99, "left": -544.4, "attrs": {} },
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 202.2, "left": -13.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -99.6,
+      "left": 205.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led6",
+      "top": -51.6,
+      "left": 205.4,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led11",
+      "top": 6,
+      "left": 205.4,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led16",
+      "top": 63.6,
+      "left": 205.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -99.6,
+      "left": 243.8,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -99.6,
+      "left": 282.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": -99.6,
+      "left": 320.6,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led5", "top": -99.6, "left": 359, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led7",
+      "top": -51.6,
+      "left": 243.8,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led8",
+      "top": -51.6,
+      "left": 282.2,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led9",
+      "top": -51.6,
+      "left": 320.6,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led10",
+      "top": -51.6,
+      "left": 359,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led12",
+      "top": 6,
+      "left": 243.8,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led13",
+      "top": 6,
+      "left": 282.2,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led14",
+      "top": 6,
+      "left": 320.6,
+      "attrs": { "color": "yellow" }
+    },
+    { "type": "wokwi-led", "id": "led15", "top": 6, "left": 359, "attrs": { "color": "yellow" } },
+    {
+      "type": "wokwi-led",
+      "id": "led17",
+      "top": 63.6,
+      "left": 243.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led18",
+      "top": 63.6,
+      "left": 282.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led19",
+      "top": 63.6,
+      "left": 320.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led20",
+      "top": 63.6,
+      "left": 359,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -178.45,
+      "left": 134.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -159.25,
+      "left": 134.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -197.65,
+      "left": 134.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": -216.85,
+      "left": 134.4,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 6.2,
+      "left": 672,
+      "attrs": { "color": "green", "xray": "1", "key": "Q" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -195.2,
+      "left": 485.6,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 134.6, "left": 518.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "led1:C", "bb1:63t.a", "red", [ "v0" ] ],
+    [ "led2:C", "bb1:63t.b", "red", [ "v9.6", "h-134", "v9.6" ] ],
+    [ "bb1:63t.c", "led3:C", "red", [ "v0", "h57.6", "v-19.2", "h163.2" ] ],
+    [ "bb1:63t.e", "bb1:62t.e", "violet", [ "v0" ] ],
+    [ "led4:C", "bb1:63t.d", "red", [ "v9.6", "h-191.6", "v28.8", "h-67.2" ] ],
+    [ "bb1:62t.d", "led5:C", "red", [ "v0", "h86.4", "v-28.8", "h220.8" ] ],
+    [ "bb1:62t.a", "r2:2", "red", [ "v-86.4", "h124.8" ] ],
+    [ "mega:GND.1", "bb1:tn.50", "black", [ "v-76.8", "h28.6", "v-211.2" ] ],
+    [ "bb1:tn.49", "r2:1", "red", [ "v9.5", "h37.6", "v-86.4" ] ],
+    [ "bb1:61t.e", "bb1:60t.e", "violet", [ "v0" ] ],
+    [ "led6:C", "bb1:61t.a", "blue", [ "v0", "h-47.6", "v-38.4" ] ],
+    [ "led7:C", "bb1:61t.b", "blue", [ "v9.6", "h-86", "v-48" ] ],
+    [ "led8:C", "bb1:61t.c", "blue", [ "v9.6", "h-124.4", "v-28.8" ] ],
+    [ "led9:C", "bb1:61t.d", "blue", [ "v9.6", "h-162.8", "v-19.2" ] ],
+    [ "led10:C", "bb1:60t.d", "blue", [ "v9.6", "h-201.2", "v-19.2", "h9.6" ] ],
+    [ "bb1:60t.a", "r1:2", "blue", [ "v-9.6", "h153.6", "v-115.2" ] ],
+    [ "r1:1", "bb1:tn.48", "blue", [ "v0", "h-57.6", "v105.6", "h-38.4" ] ],
+    [ "bb1:59t.e", "bb1:58t.e", "violet", [ "v0" ] ],
+    [ "bb1:58t.a", "r3:2", "gold", [ "v-9.6", "h182.4", "v-134.4" ] ],
+    [ "r3:1", "bb1:tn.47", "gold", [ "v0", "h-57.6", "v124.8", "h-48" ] ],
+    [ "bb1:tn.46", "r4:1", "green", [ "v9.5", "h47.2", "v-144" ] ],
+    [ "led11:C", "bb1:59t.a", "yellow", [ "v0", "h-57.2", "v-96" ] ],
+    [ "led12:C", "bb1:59t.b", "yellow", [ "v9.6", "h-95.6", "v-96" ] ],
+    [ "led13:C", "bb1:59t.c", "yellow", [ "v9.6", "h-134", "v-86.4" ] ],
+    [ "led14:C", "bb1:59t.d", "yellow", [ "v9.6", "h-172.4", "v-76.8" ] ],
+    [ "led15:C", "bb1:58t.d", "yellow", [ "v9.6", "h-210.8", "v-76.8" ] ],
+    [ "bb1:57t.e", "bb1:56t.e", "violet", [ "v0" ] ],
+    [ "bb1:56t.a", "r4:2", "green", [ "v-9.6", "h182.4", "v-67.2", "h28.8", "v-86.4" ] ],
+    [ "led16:C", "bb1:57t.a", "green", [ "v0", "h-38", "v-153.6" ] ],
+    [ "led17:C", "bb1:57t.b", "green", [ "v9.6", "h-76.4", "v-153.6" ] ],
+    [ "led18:C", "bb1:57t.c", "green", [ "v9.6", "h-114.8", "v-144" ] ],
+    [ "led19:C", "bb1:57t.d", "green", [ "v9.6", "h-153.2", "v-134.4" ] ],
+    [ "led20:C", "bb1:56t.d", "green", [ "v9.6", "h-191.6", "v-134.4" ] ],
+    [ "mega:22", "led5:A", "red", [ "v1.1", "h65", "v-278.4" ] ],
+    [ "mega:23", "led4:A", "red", [ "v1.1", "h64.6", "v-268.8", "h-76.8" ] ],
+    [ "mega:24", "led3:A", "red", [ "v0.95", "h65", "v-278.4", "h-105.6" ] ],
+    [ "mega:25", "led2:A", "red", [ "v0.95", "h64.6", "v-278.4", "h-153.6" ] ],
+    [ "mega:26", "led1:A", "red", [ "v1.05", "h65", "v-288", "h-182.4" ] ],
+    [ "mega:27", "led10:A", "blue", [ "v1.05", "h64.6", "v-240" ] ],
+    [ "led9:A", "mega:28", "blue", [ "v9.6", "h67.2", "v249.6" ] ],
+    [ "mega:29", "led8:A", "blue", [ "v1.15", "h64.6", "v-249.6", "h-115.2" ] ],
+    [ "led7:A", "mega:30", "blue", [ "v9.6", "h144", "v259.2" ] ],
+    [ "led6:A", "mega:31", "blue", [ "v9.6", "h192", "v259.2" ] ],
+    [ "mega:32", "led15:A", "yellow", [ "v1.1", "h65", "v-220.8" ] ],
+    [ "led14:A", "mega:33", "yellow", [ "v9.6", "h76.8", "v211.2" ] ],
+    [ "mega:34", "led13:A", "yellow", [ "v1.2", "h65", "v-220.8", "h-105.6" ] ],
+    [ "led12:A", "mega:35", "yellow", [ "v9.6", "h153.6", "v220.8" ] ],
+    [ "mega:36", "led11:A", "yellow", [ "v1.3", "h65", "v-230.4", "h-182.4" ] ],
+    [ "mega:37", "led20:A", "green", [ "v1.3", "h64.6", "v-182.4" ] ],
+    [ "led19:A", "mega:38", "green", [ "v9.6", "h67.2", "v182.4" ] ],
+    [ "mega:39", "led18:A", "green", [ "v1.15", "h64.6", "v-182.4", "h-115.2" ] ],
+    [ "led17:A", "mega:40", "green", [ "v9.6", "h144", "v192" ] ],
+    [ "mega:41", "led16:A", "green", [ "v1.25", "h64.6", "v-192", "h-192" ] ],
+    [ "mega:5V", "bb1:bp.50", "red", [ "v26.1", "h-180.1", "v-220.8", "h105.6", "v-105.6" ] ],
+    [ "mega:GND.2", "bb1:bn.50", "black", [ "v6.9", "h-180.25", "v-211.2", "h105.6", "v-86.4" ] ],
+    [ "lcd1:VCC", "bb1:bp.49", "red", [ "h-38.4", "v278.5", "h-355.2", "v-48", "h0" ] ],
+    [ "lcd1:GND", "bb1:bn.49", "black", [ "h-48", "v297.6", "h-393.6" ] ],
+    [ "relay1:VCC", "bb1:bp.48", "red", [ "h-403.2", "v-76.8", "h-76.8" ] ],
+    [ "bb1:bn.48", "relay1:GND", "black", [ "v0" ] ],
+    [ "mega:50", "relay1:IN", "gray", [ "v1", "h93.8", "v-182.4" ] ],
+    [ "mega:51", "btn1:2.r", "magenta", [ "v1", "h400.6", "v-316.8" ] ],
+    [
+      "relay1:COM",
+      "bb1:bp.47",
+      "red",
+      [ "h39.6", "v-59", "h-182.4", "v38.4", "h-345.6", "v-67.2", "h-115.2", "v0" ]
+    ],
+    [ "btn1:2.l", "bb1:bn.47", "black", [ "h-192", "v96.2", "h-451.2" ] ],
+    [ "relay1:NC", "btn1:1.l", "green", [ "v-1.2", "h20.4", "v-134.4" ] ],
+    [ "lcd1:SCL", "mega:21", "green", [ "h-19.2", "v326.7", "h-144" ] ],
+    [ "lcd1:SDA", "mega:20", "green", [ "h-28.8", "v326.6", "h-144" ] ]
+  ],
+  "dependencies": {}
+}
